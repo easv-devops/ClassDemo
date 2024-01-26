@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: integration
+ 
+steps:
+    - name: build
+      image: mcr.microsoft.com/dotnet/sdk
+      commands:
+        - dotnet build
+ 
+    - name: test
+      image: mcr.microsoft.com/dotnet/sdk
+      commands:
+        - dotnet test
