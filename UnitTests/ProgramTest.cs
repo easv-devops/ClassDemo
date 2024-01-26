@@ -15,6 +15,6 @@ public class ProgramTest
         var result = Program.GetGreetingMessage();
 
         // Assert
-        Assert.Equal("Hello, Drone CI!", result);
+        Assert.Equal("Hello,  Drone CI!", result);
     }
 }
