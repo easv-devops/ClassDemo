@@ -7,16 +7,15 @@
 
     public static string GetGreetingMessage()
     {
-        // bool isDroneCI = Environment.GetEnvironmentVariable("DRONE") == "true";
-        //
-        // if (isDroneCI)
-        // {
-        //     return "Hello, Drone CI!";
-        // }
-        // else
-        // {
-        //     return "Hello, World!";
-        // }
-        return string.Empty;
+        bool isDroneCI = Environment.GetEnvironmentVariable("DRONE") == "true";
+        
+        if (isDroneCI)
+        {
+            return "Hello, Drone CI!";
+        }
+        else
+        {
+            return "Hello, World!";
+        }
     }
 }
