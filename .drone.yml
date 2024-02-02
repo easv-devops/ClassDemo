@@ -7,11 +7,11 @@ steps:
       image: boulundeasv/dotnet-sdk-with-java
       commands:
         - dotnet sonarscanner begin
-            /k:"easv-devops_ClassDemo_AY1p5U0uEVvRW2O60D2o"
+            /k:"easv-devops_ClassDemo_AY1p6I-NEVvRW2O60D3F"
             /d:sonar.host.url="http://sonar.setgo.dk:9000"  
-            /d:sonar.token="sqp_28f11788dec56cc39734338e4261dad65dfe7428"
-            /d:sonar.cs.vscodecoveragexml.reportsPaths=coverage.xml
+            /d:sonar.token="sqp_9dc5ec060f1008936611c78e561dbc550cc05e06"
+            /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
             /d:sonar.qualitygate.wait=true
         - dotnet build --no-incremental
         - dotnet-coverage collect "dotnet test" -f xml -o "coverage.xml"
-        - dotnet sonarscanner end /d:sonar.token="sqp_28f11788dec56cc39734338e4261dad65dfe7428"
+        - dotnet sonarscanner end /d:sonar.token="sqp_9dc5ec060f1008936611c78e561dbc550cc05e06"
