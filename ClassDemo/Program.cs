@@ -17,5 +17,6 @@
         // {
         //     return "Hello, World!";
         // }
+        return string.Empty;
     }
 }
