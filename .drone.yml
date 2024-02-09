@@ -7,7 +7,7 @@ steps:
       image: boulundeasv/dotnet-sdk-with-java
       environment:
         SONARSECRET:
-          from_secrect: SonarQubeSecret
+          from_secret: SonarQubeSecret
       commands:
         - dotnet sonarscanner begin
             /k:"easv-devops_ClassDemo_AY1p6I-NEVvRW2O60D3F"
