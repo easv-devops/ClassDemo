@@ -13,10 +13,6 @@
         {
             return "Hello, Drone CI!";
         }
-        else if (DateTime.Now.DayOfWeek == DayOfWeek.Saturday)
-        {
-            return "Have a nice weekend";
-        }
         else
         {
             return "Hello, World!";
